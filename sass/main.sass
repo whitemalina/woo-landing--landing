@@ -505,8 +505,7 @@ table
 .testimonial__arrow
   margin-left: 25%
 .people-section
-  margin-top: 150px
-  height: 400px
+  margin-top: 10%
 .people__container
   margin: 0px 81px 0px 81px
   display: flex
@@ -516,6 +515,8 @@ table
   align-items: center
   background: url("../img/frame 1.png") 100% 100% no-repeat
   background-size: cover
+  img
+    max-width: 100%
   h1
     font-family: Circular Std;
     font-style: normal;
@@ -544,6 +545,7 @@ table
   height: 261px;
   background: #5F37EF;
 .cta__container
+  margin-top: -17px
   height: 100%
   display: flex
   justify-content: center
@@ -582,7 +584,6 @@ table
       background-color: #fff
       color: #5F37EF
 .footer-section
-  height: 741px;
   background: #7854F7;   
 .footer__container
   display: flex
@@ -629,11 +630,57 @@ table
   top: 5475px;
 
   background-color : #9A7DFF;
+.footer__nav
+  margin-top: 34px
+  display: flex
+  justify-content: center
+.footer__item
+  width: 127px
+  margin-right: 138px
+  display: flex
+  flex-direction: column
+  h1
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 52px;
+    /* identical to box height, or 375% */
 
+    text-transform: uppercase;
 
+    color: #FFFFFF;
+  a
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    &:hover
+      text-decoration: underline
+.footer__under
+  display: flex
+  justify-content: space-around
+  align-items: center
+  background-color: #fff
+  margin: 26px 0 26px 0
+  h1
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
 
+    text-align: center;
 
-
+    color: #272D4E;
+.footer__social
+  img
+    margin-right: 54px
+    &:nth-last-child(1)
+      margin: 0
 
 @media screen and (max-width: 1035px) 
   .products
@@ -683,6 +730,10 @@ table
   .global-community
     margin: 0
 @media screen and (max-width: 1341px) 
+  .cta__container
+    h1
+      font-size: 20px
+      margin-left: 10px
   .logo_and_nav
     justify-content: center
   .logo
@@ -706,3 +757,57 @@ table
   .logo_and_nav
     justify-content: flex-start
     padding-left: 5%
+@media screen and (max-width: 1517px) 
+  .footer__about
+    justify-content: center
+    align-items: center
+  .footer__about
+    margin: 0
+    margin-top: 20px
+    img
+      margin: 0
+    &:nth-last-child(1)
+      margin-top: 20px
+      
+  .about
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    margin: 0
+  .footer__nav
+    flex-direction: column
+    width: 100%
+    justify-content: center
+    align-items: center
+    
+  .footer__item
+    margin: 0
+    margin-top: 10px
+@media screen and (max-width: 743px) 
+  .testim
+    max-width: 100%
+@media screen and (max-width: 861px)
+   .footer__container
+    margin: 0
+    padding: 0
+@media screen and (max-width: 571px) 
+  .cta__container
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    h1
+      margin: 0
+    button
+      margin-top: 15px
+@media screen and (max-width: 894px) 
+  .footer__under
+    img
+      margin-right: 2px
+@media screen and (max-width: 730px) 
+  .footer__under
+    flex-direction: column
+    h1
+      margin-top: 15px
+    img 
+      margin-top: 10px
